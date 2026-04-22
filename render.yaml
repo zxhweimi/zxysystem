@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: joint-sensor-backend
+    env: python
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn backend.app:app --chdir . --bind 0.0.0.0:$PORT
+    plan: free
+    healthCheckPath: /api/system/status
