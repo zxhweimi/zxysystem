@@ -1,0 +1,11 @@
+# Ignore unnecessary files
+node_modules
+npm-debug.log
+.git
+.gitignore
+*.md
+*.pyc
+__pycache__
+venv
+.DS_Store
+*.log
